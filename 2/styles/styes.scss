@@ -1,0 +1,45 @@
+$hoverColor:rgb(0, 0, 53);
+
+//mobile first
+
+body{
+    background: #c3cfe2;
+    padding-top: 2rem;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    gap: 1rem;
+    .container__wrapper{
+        background: $hoverColor;
+        border-radius: 1em;
+        width: 20rem;
+        height: 20rem;
+        justify-self: center;
+        .container__img{
+            border-radius: 2em;
+            padding: 1em;
+            width: 20rem;
+            transform: translate(-1rem, -1rem );
+            &:hover{
+                opacity: 0;
+                transition-duration: 500ms;
+            }
+        }
+    }
+}
+.container__img--btn{
+    height: 20rem;
+    transform: translate(0rem, -22.3rem);
+    opacity: 0;
+    &:hover{
+        background-color:$hoverColor;
+        border-radius: 1em;
+        height: 20rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+    }
+}
+@import "./media-queries";

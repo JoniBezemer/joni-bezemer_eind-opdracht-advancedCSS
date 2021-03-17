@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+.social__blog {
+  background-color: #e17b77;
+}
+
+.social__twitter {
+  background-color: #00aced;
+}
+
+.social__linkedin {
+  background-color: #007bb6;
+}
+
+.social__facebook {
+  background-color: #3b5998;
+}
+
+.social__github {
+  background-color: #333;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  background: lightsteelblue;
+  font-family: 'Roboto', sans-serif;
+}
+
+.social {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  -webkit-transform: translateX(12em);
+          transform: translateX(12em);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.social a {
+  color: white;
+  text-decoration: underline;
+  padding: 0.9rem;
+  width: 13em;
+  text-align: left;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+.social a:hover {
+  -webkit-transform: translate(-12em, 0);
+          transform: translate(-12em, 0);
+}
+
+.social a i {
+  margin-right: 1.2em;
+}
+/*# sourceMappingURL=styles.css.map */

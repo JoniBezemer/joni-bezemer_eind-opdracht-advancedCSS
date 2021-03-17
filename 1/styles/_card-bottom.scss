@@ -1,0 +1,17 @@
+@import "./var+mixin";
+
+.card__bottom{
+    background: #686de0;
+    color: $primaryLightColor;
+    border-radius: 0 0 1em 1em;
+    width: 23em;
+    height: 7em;
+    position: absolute;
+    top: 18em;
+    text-align: center;
+    padding-top: 4em;
+    strong{
+        letter-spacing: 0.5em;
+        @include lineHeight;
+    }
+}

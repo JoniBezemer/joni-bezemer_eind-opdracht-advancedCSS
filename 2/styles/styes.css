@@ -1,0 +1,79 @@
+body {
+  background: #c3cfe2;
+  padding-top: 2rem;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: ()[1fr];
+      grid-template-columns: repeat(1fr);
+  gap: 1rem;
+}
+
+.container .container__wrapper {
+  background: #000035;
+  border-radius: 1em;
+  width: 20rem;
+  height: 20rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.container .container__wrapper .container__img {
+  border-radius: 2em;
+  padding: 1em;
+  width: 20rem;
+  -webkit-transform: translate(-1rem, -1rem);
+          transform: translate(-1rem, -1rem);
+}
+
+.container .container__wrapper .container__img:hover {
+  opacity: 0;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+.container__img--btn {
+  height: 20rem;
+  -webkit-transform: translate(0rem, -22.3rem);
+          transform: translate(0rem, -22.3rem);
+  opacity: 0;
+}
+
+.container__img--btn:hover {
+  background-color: #000035;
+  border-radius: 1em;
+  height: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+/*# sourceMappingURL=styes.css.map */

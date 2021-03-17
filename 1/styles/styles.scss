@@ -1,0 +1,30 @@
+@import "./var+mixin";
+@import "./card-bottom";
+
+body{
+    background-color: #c3cfe2;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    .card{
+        background:$primaryLightColor;
+        border-radius: 1em;
+        width: 23em;
+        height: 29em;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        position: relative;
+        .card__top{
+            padding: 2em;
+            @include lineHeight;
+        }
+    }
+}
+.card__img{
+    width: 7em;
+    border-radius: 5em;
+    border:solid $primaryLightColor 0.3em;
+    position: absolute;
+    z-index: 1;
+    top: 14em;
+    left: 7.5em;
+}
